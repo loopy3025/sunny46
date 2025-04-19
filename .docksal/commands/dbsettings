@@ -2,8 +2,9 @@
 
 echo "Attempting to generate settings files."
 
-# Remove local.settings.php if it exists
-[ -f "./docroot/sites/default/settings/local.settings.php" ] && rm "./docroot/sites/default/settings/local.settings.php"
+rm ./web/sites/default/settings.local.php
+cp ./web/sites/default/default.settings.local.php ./web/sites/default/settings.local.php
 
-# Generate settings files
-fin drush init:settings --database=default --username=user --password=user --host=db --port=3306
+fin drush site-install minimal --config-dir=../config --existing-config --account-name="admin" --account-pass="admin" -y
+
+fin drush cim -y
