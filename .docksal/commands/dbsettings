@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Attempting to generate settings files."
+
+# Remove local.settings.php if it exists
+[ -f "./docroot/sites/default/settings/local.settings.php" ] && rm "./docroot/sites/default/settings/local.settings.php"
+
+# Generate settings files
+fin drush init:settings --database=default --username=user --password=user --host=db --port=3306

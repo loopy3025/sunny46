@@ -1,0 +1,31 @@
+services:
+ # MailHog
+  mail:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: mail
+  # Memcached
+  memcached:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: memcached
+# Solr 7
+  solr:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: solr
+    # Pin Solr version
+    hostname: solr
+    image: ${SOLR_IMAGE:-docksal/solr:7.5}
+    volumes:
+      - ${PROJECT_ROOT}/.docksal/etc/solr/conf:/var/lib/solr/conf:ro
+  db:
+    volumes:
+      - ${PROJECT_ROOT}/db:/docker-entrypoint-initdb.d:ro
+  # Browser
+  browser:
+    hostname: browser
+    image: selenium/standalone-chrome
+    dns:
+      - ${DOCKSAL_DNS1}
+      - ${DOCKSAL_DNS2}

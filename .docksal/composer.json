@@ -1,0 +1,8 @@
+{
+  "name": "webny/docksal",
+  "type": "git",
+  "description": "WebNY Core Docksal development environment",
+  "license": "WebNY - All Rights Reserved",
+  "minimum-stability": "dev",
+  "prefer-stable": true
+} 

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "Configuring docksal's php settings from your composer.json file..."
+fin phpsettings
+
+echo "Starting docksal..."
+fin start
+
+echo "Configuring database settings in your local settings file..."
+fin dbsettings

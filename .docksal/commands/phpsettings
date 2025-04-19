@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+# Path to composer.json, docksal.env, and webnysettings.yml relative to this script's location
+COMPOSER_JSON="./composer.json"
+DOCKSAL_ENV="./.docksal/docksal.env"
+WEBNYSETTINGS_YML="./.docksal/webnysettings.yml"
+# Initial CLI version we are currently using
+DOCKSAL_CLI_VERSION="3"
+
+# Check if composer.json exists
+if [ ! -f "$COMPOSER_JSON" ]; then
+  echo "Error: composer.json not found at $COMPOSER_JSON"
+  exit 1
+fi
+
+# Extract the PHP version from composer.json using grep and sed
+php_version_required=$(grep -A 1 '"platform": {' "$COMPOSER_JSON" | grep '"php":' | sed -e 's/.*"php": "\(.*\)".*/\1/')
+
+echo "PHP version required by composer.json at config:platform:php: ${php_version_required}"
+
+# Validate if PHP version was extracted
+if [ -z "$php_version_required" ]; then
+  echo "Error: PHP version not found in $COMPOSER_JSON. Ensure 'platform.php' is specified in the 'config' section."
+  exit 1
+fi
+
+# Split the required PHP version into major and minor components
+required_major=$(echo "$php_version_required" | awk -F. '{print $1}')
+required_minor=$(echo "$php_version_required" | awk -F. '{print $2}')
+
+echo "PHP Version Required: $php_version_required"
+
+# Extract CLI version from webnysettings.yml
+cli_version_from_yml=$(grep 'cli:' "$WEBNYSETTINGS_YML" | awk '{print $2}')
+
+echo "CLI version from webnysettings.yml: ${cli_version_from_yml}"
+
+# Validate if CLI version was extracted
+if [ -z "$cli_version_from_yml" ]; then
+  echo "Error: CLI version not found in $WEBNYSETTINGS_YML. Ensure 'cli' is specified."
+  exit 1
+fi
+
+# Update DOCKSAL_CLI_VERSION with the value from webnysettings.yml
+DOCKSAL_CLI_VERSION="${cli_version_from_yml}"
+
+# Create the docksal_php_version variable
+docksal_php_version="${required_major}.${required_minor}-${DOCKSAL_CLI_VERSION}"
+
+echo "Updating docksal.env to docksal PHP version: $docksal_php_version"
+
+# Update docksal.env with the new CLI_IMAGE value
+if [ -f "$DOCKSAL_ENV" ]; then
+  # Remove any existing CLI_IMAGE line
+  sed -i.bak '/^CLI_IMAGE=/d' "$DOCKSAL_ENV"
+  if [ $? -ne 0 ]; then
+    echo "Error removing existing CLI_IMAGE line from docksal.env."
+    exit 1
+  fi
+
+  # Append the new CLI_IMAGE line
+  echo "CLI_IMAGE='docksal/cli:php${docksal_php_version}'" >> "$DOCKSAL_ENV"
+  if [ $? -eq 0 ]; then
+    echo "CLI_IMAGE line added to docksal.env successfully."
+  else
+    echo "Error adding CLI_IMAGE line to docksal.env."
+    exit 1
+  fi
+else
+  echo "Error: docksal.env not found."
+  exit 1
+fi
