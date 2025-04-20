@@ -1,0 +1,17 @@
+uuid: a94d0963-53a6-41cd-921b-a871353d1de3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Adventure
+type: adventure
+description: 'The Adventure content type is the main workhorse of the Adventure Website. Use this content type to catalog your activities. This content is organized in a main Blog view for your homepage, a Blog feed, and listings on each Region and Location page.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

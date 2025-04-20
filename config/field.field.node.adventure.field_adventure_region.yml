@@ -1,0 +1,29 @@
+uuid: 928410a2-2df6-436f-8674-b7213a0e8194
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_region
+    - node.type.adventure
+    - node.type.region
+id: node.adventure.field_adventure_region
+field_name: field_adventure_region
+entity_type: node
+bundle: adventure
+label: Region
+description: 'Select any region(s) in which this Adventure took place. Note that multiple regions can be selected because regions can overlap.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

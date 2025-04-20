@@ -1,0 +1,22 @@
+uuid: feffac18-7564-491d-8d49-bdf18dbe3d5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: adventure
+label: Adventure
+type: 'canonical_entities:node'
+pattern: 'adventure/[node:title]'
+selection_criteria:
+  7589fcbe-9639-43e1-b396-2cdd7df1ee1c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7589fcbe-9639-43e1-b396-2cdd7df1ee1c
+    context_mapping:
+      node: node
+    bundles:
+      adventure: adventure
+selection_logic: and
+weight: -5
+relationships: {  }

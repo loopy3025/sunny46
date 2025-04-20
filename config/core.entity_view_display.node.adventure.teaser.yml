@@ -1,0 +1,37 @@
+uuid: 2a92e020-7377-48cd-a182-dc815568ba80
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.adventure.body
+    - field.field.node.adventure.field_adventure_date
+    - field.field.node.adventure.field_adventure_location
+    - field.field.node.adventure.field_adventure_region
+    - node.type.adventure
+  module:
+    - text
+    - user
+id: node.adventure.teaser
+targetEntityType: node
+bundle: adventure
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_adventure_date: true
+  field_adventure_location: true
+  field_adventure_region: true
+  field_region: true

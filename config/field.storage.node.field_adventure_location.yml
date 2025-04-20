@@ -1,0 +1,19 @@
+uuid: 38eae7f5-1e6d-494b-bff3-8fa0b018ac5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_adventure_location
+field_name: field_adventure_location
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

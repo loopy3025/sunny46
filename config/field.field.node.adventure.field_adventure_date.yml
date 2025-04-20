@@ -1,0 +1,21 @@
+uuid: b0777734-b1d2-419f-88fa-3be6d4614452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_date
+    - node.type.adventure
+  module:
+    - datetime
+id: node.adventure.field_adventure_date
+field_name: field_adventure_date
+entity_type: node
+bundle: adventure
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
