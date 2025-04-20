@@ -1,0 +1,27 @@
+uuid: 5915f89d-d761-48bc-8ddb-f2cc78cbde85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_route_file
+    - node.type.adventure
+  module:
+    - file
+id: node.adventure.field_adventure_route_file
+field_name: field_adventure_route_file
+entity_type: node
+bundle: adventure
+label: 'Route file'
+description: 'Upload a route tracking file such as a GPX, json, or csv file.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: adventure_routes
+  file_extensions: 'json csv gpx tcx crs kmz xml'
+  max_filesize: ''
+  description_field: false
+field_type: file

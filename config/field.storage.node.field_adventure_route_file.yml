@@ -1,0 +1,23 @@
+uuid: 85543f37-d9ee-4f53-9653-ee1b43d7f9a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_adventure_route_file
+field_name: field_adventure_route_file
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -9,7 +9,9 @@ dependencies:
     - field.field.node.adventure.field_adventure_end_date
     - field.field.node.adventure.field_adventure_hero
     - field.field.node.adventure.field_adventure_location
+    - field.field.node.adventure.field_adventure_map
     - field.field.node.adventure.field_adventure_region
+    - field.field.node.adventure.field_adventure_route_file
     - field.field.node.adventure.field_adventure_stages
     - field.field.node.adventure.field_adventure_tags
     - field.field.node.adventure.field_adventure_type
@@ -46,7 +48,9 @@ hidden:
   field_adventure_date: true
   field_adventure_end_date: true
   field_adventure_location: true
+  field_adventure_map: true
   field_adventure_region: true
+  field_adventure_route_file: true
   field_adventure_stages: true
   field_adventure_tags: true
   field_adventure_type: true
