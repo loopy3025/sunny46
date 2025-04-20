@@ -10,7 +10,7 @@ id: node.adventure.field_adventure_location
 field_name: field_adventure_location
 entity_type: node
 bundle: adventure
-label: Location
+label: Locations
 description: 'Select any locations which were featured in this adventure.'
 required: false
 translatable: false

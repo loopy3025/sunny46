@@ -10,7 +10,7 @@ id: node.adventure.field_adventure_region
 field_name: field_adventure_region
 entity_type: node
 bundle: adventure
-label: Region
+label: Regions
 description: 'Select any region(s) in which this Adventure took place. Note that multiple regions can be selected because regions can overlap.'
 required: true
 translatable: false
