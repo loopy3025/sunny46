@@ -1,0 +1,19 @@
+uuid: b312d418-38c6-4599-a029-84ccb6b0c495
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_adventure_step_narrative
+field_name: field_adventure_step_narrative
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

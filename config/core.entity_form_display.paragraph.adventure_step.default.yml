@@ -1,0 +1,45 @@
+uuid: efdb17b4-6482-42af-8250-2ca6e55531a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.adventure_step.field_adventure_step_images
+    - field.field.paragraph.adventure_step.field_adventure_step_narrative
+    - field.field.paragraph.adventure_step.field_adventure_step_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.adventure_step
+  module:
+    - image
+    - text
+id: paragraph.adventure_step.default
+targetEntityType: paragraph
+bundle: adventure_step
+mode: default
+content:
+  field_adventure_step_images:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_adventure_step_narrative:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_adventure_step_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: bb0b9ffa-968c-4681-a7a6-b0f151e53fbc
+langcode: en
+status: true
+dependencies: {  }
+id: adventure_step
+label: Step
+icon_uuid: null
+icon_default: null
+description: 'Individual steps of an adventure.'
+behavior_plugins: {  }
