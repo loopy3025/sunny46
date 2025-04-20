@@ -1,0 +1,17 @@
+uuid: 79e351c4-d0df-4f1f-b862-8ec5b8350c73
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Location
+type: location
+description: 'The place(s) where your Adventure takes place. A location can have multiple Regions because sometimes Regions overlap.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
