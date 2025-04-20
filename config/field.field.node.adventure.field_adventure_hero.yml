@@ -11,7 +11,7 @@ id: node.adventure.field_adventure_hero
 field_name: field_adventure_hero
 entity_type: node
 bundle: adventure
-label: 'Adventure Hero'
+label: Hero
 description: ''
 required: false
 translatable: false

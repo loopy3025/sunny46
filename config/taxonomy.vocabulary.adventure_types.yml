@@ -1,0 +1,9 @@
+uuid: 9dac6f0c-d645-400c-8278-4edfe04290bc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Adventure types'
+vid: adventure_types
+description: null
+weight: 0
+new_revision: false

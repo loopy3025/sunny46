@@ -1,0 +1,29 @@
+uuid: d0d2a5b9-0d46-4a35-91b5-05638f9cf5a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_tags
+    - node.type.adventure
+    - taxonomy.vocabulary.adventure_tags
+id: node.adventure.field_adventure_tags
+field_name: field_adventure_tags
+entity_type: node
+bundle: adventure
+label: Tags
+description: 'Tag your adventures with descriptive words or phrases. Some tags might describe conditions, weather, season, physical features and more. You can use this field to share different kinds of adventures with others using the taxonomy listing page view. Beware creating multiples of the same tag.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      adventure_tags: adventure_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

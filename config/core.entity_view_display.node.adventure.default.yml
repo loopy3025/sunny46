@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_region
     - field.field.node.adventure.field_adventure_stages
+    - field.field.node.adventure.field_adventure_tags
+    - field.field.node.adventure.field_adventure_type
     - node.type.adventure
   module:
     - datetime
@@ -74,6 +76,22 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_adventure_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_adventure_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_region:
     type: entity_reference_label

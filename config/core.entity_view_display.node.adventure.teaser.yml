@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_region
     - field.field.node.adventure.field_adventure_stages
+    - field.field.node.adventure.field_adventure_tags
+    - field.field.node.adventure.field_adventure_type
     - node.type.adventure
   module:
     - text
@@ -40,4 +42,6 @@ hidden:
   field_adventure_location: true
   field_adventure_region: true
   field_adventure_stages: true
+  field_adventure_tags: true
+  field_adventure_type: true
   field_region: true

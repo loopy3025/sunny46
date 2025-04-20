@@ -1,0 +1,9 @@
+uuid: aefee579-3184-4d39-931a-87b5eed6259b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Adventure tags'
+vid: adventure_tags
+description: null
+weight: 0
+new_revision: false
