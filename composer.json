@@ -23,10 +23,12 @@
         "drush/drush": "^13",
         "drupal/paragraphs": "^1.19",
         "drupal/field_group": "^3.6",
-        "drupal/pathauto": "^1.13"
+        "drupal/pathauto": "^1.13",
+        "drupal/devel_generate": "^5.3"
     },
     "require-dev": {
-        "drupal/core-dev": "^10"
+        "drupal/core-dev": "^10",
+        "drupal/devel": "^5.3"
     },
     "conflict": {
         "drupal/drupal": "*"
