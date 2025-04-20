@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.adventure.body
     - field.field.node.adventure.field_adventure_date
+    - field.field.node.adventure.field_adventure_end_date
     - field.field.node.adventure.field_adventure_hero
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_region
@@ -34,6 +35,7 @@ content:
     region: content
 hidden:
   field_adventure_date: true
+  field_adventure_end_date: true
   field_adventure_hero: true
   field_adventure_location: true
   field_adventure_region: true

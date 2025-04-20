@@ -1,0 +1,21 @@
+uuid: d7699023-573e-4b92-8e7a-f08bc56b4d8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_end_date
+    - node.type.adventure
+  module:
+    - datetime
+id: node.adventure.field_adventure_end_date
+field_name: field_adventure_end_date
+entity_type: node
+bundle: adventure
+label: 'End date'
+description: 'End date for multi-day adventures.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

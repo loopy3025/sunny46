@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.adventure.body
     - field.field.node.adventure.field_adventure_date
+    - field.field.node.adventure.field_adventure_end_date
     - field.field.node.adventure.field_adventure_hero
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_region
@@ -42,7 +43,7 @@ third_party_settings:
       label: Stages
       region: content
       parent_name: group_adventure_sections
-      weight: 8
+      weight: 9
       format_type: tab
       format_settings:
         classes: ''
@@ -58,6 +59,7 @@ third_party_settings:
         - field_adventure_date
         - field_adventure_region
         - field_adventure_location
+        - field_adventure_end_date
       label: 'Adventure Metadata'
       region: content
       parent_name: group_adventure_sections
@@ -92,6 +94,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_adventure_end_date:
+    type: datetime_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_adventure_hero:
     type: image_image
     weight: 1
@@ -102,7 +110,7 @@ content:
     third_party_settings: {  }
   field_adventure_location:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -112,13 +120,13 @@ content:
     third_party_settings: {  }
   field_adventure_region:
     type: options_select
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adventure_stages:
     type: paragraphs
-    weight: 9
+    weight: 10
     region: content
     settings:
       title: Paragraph
@@ -146,13 +154,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 12
     region: content
     settings:
       display_label: true
