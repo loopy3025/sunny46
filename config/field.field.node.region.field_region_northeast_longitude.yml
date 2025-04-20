@@ -1,0 +1,23 @@
+uuid: b51c2e2f-accd-4b65-93a4-268655333800
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region_northeast_longitude
+    - node.type.region
+id: node.region.field_region_northeast_longitude
+field_name: field_region_northeast_longitude
+entity_type: node
+bundle: region
+label: 'Northeast longitude'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: lon
+field_type: decimal

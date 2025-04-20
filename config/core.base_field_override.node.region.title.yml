@@ -1,0 +1,18 @@
+uuid: 727db9c8-b665-4c3c-b5e5-27e2e885d0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.region
+id: node.region.title
+field_name: title
+entity_type: node
+bundle: region
+label: 'Location Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

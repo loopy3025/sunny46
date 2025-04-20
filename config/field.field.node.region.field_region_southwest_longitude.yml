@@ -1,0 +1,23 @@
+uuid: 98bc2136-d8c4-442f-8541-26ad254eee9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region_southwest_longitude
+    - node.type.region
+id: node.region.field_region_southwest_longitude
+field_name: field_region_southwest_longitude
+entity_type: node
+bundle: region
+label: 'Southwest longitude'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: lon
+field_type: decimal

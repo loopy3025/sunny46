@@ -1,0 +1,20 @@
+uuid: 7f44cd1f-28a1-4ab7-8454-b0d3ef115c23
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_region_southwest_longitude
+field_name: field_region_southwest_longitude
+entity_type: node
+type: decimal
+settings:
+  precision: 12
+  scale: 6
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

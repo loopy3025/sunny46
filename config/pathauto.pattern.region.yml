@@ -1,0 +1,22 @@
+uuid: ac106d1a-c760-4cd4-ad78-24784ca5b68a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: region
+label: Region
+type: 'canonical_entities:node'
+pattern: 'region/[node:title]'
+selection_criteria:
+  3fe4b299-72e2-4f39-8f98-94e9916ab7e8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3fe4b299-72e2-4f39-8f98-94e9916ab7e8
+    context_mapping:
+      node: node
+    bundles:
+      region: region
+selection_logic: and
+weight: -5
+relationships: {  }

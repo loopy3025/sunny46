@@ -1,0 +1,20 @@
+uuid: 155937ad-2dd4-496d-855f-9e64b41ae85e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_region_southwest_latitude
+field_name: field_region_southwest_latitude
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 6
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

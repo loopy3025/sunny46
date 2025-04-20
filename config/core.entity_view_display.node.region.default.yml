@@ -1,0 +1,45 @@
+uuid: 785e84fb-423d-465f-9e9f-9f20a5f6a374
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.region.body
+    - field.field.node.region.field_region_map
+    - field.field.node.region.field_region_northeast_latitude
+    - field.field.node.region.field_region_northeast_longitude
+    - field.field.node.region.field_region_southwest_latitude
+    - field.field.node.region.field_region_southwest_longitude
+    - node.type.region
+  module:
+    - image
+    - text
+    - user
+id: node.region.default
+targetEntityType: node
+bundle: region
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_map:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_region_northeast_latitude: true
+  field_region_northeast_longitude: true
+  field_region_southwest_latitude: true
+  field_region_southwest_longitude: true
+  links: true

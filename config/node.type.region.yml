@@ -1,0 +1,19 @@
+uuid: 94398f17-8f4c-4ca6-9204-3d52e05cde2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Region
+type: region
+description: 'Regions organize your adventures to a specific territory. A region includes a rectangular boundary on Earth and a map that you upload to the website. Each adventure is associated with a location and each location is associated in a region. Your site may only have one region if your adventures are centered in just one area, but you should have at least one region for most of the features of the Adventure Website recipe. The reason this recipe uses this content type instead of another contributed mapping module is because mapping has traditionally been very flaky in that services have a tendency to be transient or pay-only. Our methodology gives you complete control over your mapping.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
