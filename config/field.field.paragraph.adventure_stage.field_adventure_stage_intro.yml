@@ -12,7 +12,7 @@ id: paragraph.adventure_stage.field_adventure_stage_intro
 field_name: field_adventure_stage_intro
 entity_type: paragraph
 bundle: adventure_stage
-label: 'Stage introduction'
+label: Introduction
 description: 'If you want to add some context prior to listing steps in a stage, you can add brief introduction here.'
 required: false
 translatable: false

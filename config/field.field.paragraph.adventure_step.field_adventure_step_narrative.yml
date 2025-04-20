@@ -12,7 +12,7 @@ id: paragraph.adventure_step.field_adventure_step_narrative
 field_name: field_adventure_step_narrative
 entity_type: paragraph
 bundle: adventure_step
-label: 'Step narrative'
+label: Narrative
 description: 'The text associated with a step should be added here.'
 required: true
 translatable: false

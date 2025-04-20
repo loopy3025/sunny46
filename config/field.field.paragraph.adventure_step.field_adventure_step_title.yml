@@ -9,7 +9,7 @@ id: paragraph.adventure_step.field_adventure_step_title
 field_name: field_adventure_step_title
 entity_type: paragraph
 bundle: adventure_step
-label: 'Step title'
+label: Title
 description: "A title will appear on this step, but this field is not required if you're simply progressing a continuous narrative."
 required: false
 translatable: false

@@ -11,7 +11,7 @@ id: paragraph.adventure_step.field_adventure_step_images
 field_name: field_adventure_step_images
 entity_type: paragraph
 bundle: adventure_step
-label: 'Step images'
+label: Images
 description: "All images associated with a step are collected in a grid format. In most cases, it's best to keep each step limited to one image unless you're explaining a series or progression."
 required: false
 translatable: false
