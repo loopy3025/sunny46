@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.region.body
+    - field.field.node.region.field_adventure_hero
     - field.field.node.region.field_region_map
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
@@ -25,6 +26,17 @@ content:
     label: hidden
     settings:
       trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_adventure_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

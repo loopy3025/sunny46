@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.location.body
+    - field.field.node.location.field_adventure_hero
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
     - node.type.location
   module:
+    - image
     - text
     - user
 id: node.location.default
@@ -20,6 +22,17 @@ content:
     type: text_default
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_adventure_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

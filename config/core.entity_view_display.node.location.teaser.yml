@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.location.body
+    - field.field.node.location.field_adventure_hero
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
     - node.type.location
   module:
+    - image
     - text
     - user
 id: node.location.teaser
@@ -23,17 +25,21 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_location_region:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
     weight: 1
+    region: content
+  field_adventure_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_location_latitude: true
   field_location_longitude: true
+  field_location_region: true
   links: true

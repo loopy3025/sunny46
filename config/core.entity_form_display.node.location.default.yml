@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.location.body
+    - field.field.node.location.field_adventure_hero
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
+    - image.style.thumbnail
     - node.type.location
   module:
+    - image
     - path
     - text
 id: node.location.default
@@ -25,6 +28,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_adventure_hero:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_location_latitude:
     type: number

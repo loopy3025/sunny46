@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.region.body
+    - field.field.node.region.field_adventure_hero
     - field.field.node.region.field_region_map
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
@@ -25,6 +26,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_adventure_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_map:
     type: image
