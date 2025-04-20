@@ -1,0 +1,34 @@
+uuid: 607790b9-a1bd-4ff5-8301-bd1e567f4e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_adventure_stage_steps
+    - paragraphs.paragraphs_type.adventure_stage
+    - paragraphs.paragraphs_type.adventure_step
+  module:
+    - entity_reference_revisions
+id: paragraph.adventure_stage.field_adventure_stage_steps
+field_name: field_adventure_stage_steps
+entity_type: paragraph
+bundle: adventure_stage
+label: Steps
+description: "Add all your stage's steps here."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      adventure_step: adventure_step
+    negate: 0
+    target_bundles_drag_drop:
+      adventure_stage:
+        weight: 3
+        enabled: false
+      adventure_step:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

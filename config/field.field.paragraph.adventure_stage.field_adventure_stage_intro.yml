@@ -1,0 +1,24 @@
+uuid: 594eb644-729d-46b8-b54d-dcbe00a9d99d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_adventure_stage_intro
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.adventure_stage
+  module:
+    - text
+id: paragraph.adventure_stage.field_adventure_stage_intro
+field_name: field_adventure_stage_intro
+entity_type: paragraph
+bundle: adventure_stage
+label: 'Stage introduction'
+description: 'If you want to add some context prior to listing steps in a stage, you can add brief introduction here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

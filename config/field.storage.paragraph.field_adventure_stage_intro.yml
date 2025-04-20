@@ -1,0 +1,19 @@
+uuid: 261fcc97-99cd-4ea2-b18d-2ca16ae05501
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_adventure_stage_intro
+field_name: field_adventure_stage_intro
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 2c72fd9f-af89-4ec5-ac2f-b4091422fe85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_adventure_stage_title
+    - paragraphs.paragraphs_type.adventure_stage
+id: paragraph.adventure_stage.field_adventure_stage_title
+field_name: field_adventure_stage_title
+entity_type: paragraph
+bundle: adventure_stage
+label: 'Stage title'
+description: "A title isn't necessary for your adventure stages, though it is recommended for adventures with multiple stages."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

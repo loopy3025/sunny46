@@ -1,0 +1,10 @@
+uuid: ed2b106f-b3dd-4e08-81c9-4b29eee42c0c
+langcode: en
+status: true
+dependencies: {  }
+id: adventure_stage
+label: Stage
+icon_uuid: null
+icon_default: null
+description: "Adventures are broken up into stages and within each stage are many steps. It's okay to have one stage for your adventures, especially short ones."
+behavior_plugins: {  }
