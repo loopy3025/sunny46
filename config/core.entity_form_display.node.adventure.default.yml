@@ -23,60 +23,29 @@ dependencies:
     - text
 third_party_settings:
   field_group:
-    group_adventure_sections:
-      children:
-        - group_adventure_metadata
-        - group_adventure_stages
-      label: Sections
-      region: content
-      parent_name: ''
-      weight: 2
-      format_type: tabs
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: sections
-        label_as_html: false
-        direction: horizontal
-        width_breakpoint: 640
-    group_adventure_stages:
-      children:
-        - field_adventure_stages
-      label: Stages
-      region: content
-      parent_name: group_adventure_sections
-      weight: 11
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: stages
-        label_as_html: false
-        formatter: closed
-        description: ''
-        required_fields: true
     group_adventure_metadata:
       children:
+        - field_adventure_type
         - body
         - field_adventure_date
         - field_adventure_end_date
         - field_adventure_region
         - field_adventure_location
         - field_adventure_tags
-        - field_adventure_type
       label: 'Adventure Metadata'
       region: content
-      parent_name: group_adventure_sections
-      weight: 3
-      format_type: tab
+      parent_name: ''
+      weight: 4
+      format_type: details_sidebar
       format_settings:
         classes: ''
         show_empty_fields: false
         id: adventure_metadata
         label_as_html: false
-        formatter: closed
+        open: true
         description: ''
         required_fields: true
+        weight: 0
 id: node.adventure.default
 targetEntityType: node
 bundle: adventure
@@ -84,7 +53,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 9
@@ -94,13 +63,13 @@ content:
     third_party_settings: {  }
   field_adventure_date:
     type: datetime_default
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adventure_end_date:
     type: datetime_default
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -114,7 +83,7 @@ content:
     third_party_settings: {  }
   field_adventure_location:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -124,13 +93,13 @@ content:
     third_party_settings: {  }
   field_adventure_region:
     type: options_select
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adventure_stages:
     type: paragraphs
-    weight: 12
+    weight: 3
     region: content
     settings:
       title: Paragraph
@@ -141,14 +110,16 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: adventure_stage
       features:
+        add_above: add_above
         collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+        convert: '0'
+        duplicate: '0'
     third_party_settings: {  }
   field_adventure_tags:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS
@@ -158,7 +129,7 @@ content:
     third_party_settings: {  }
   field_adventure_type:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -178,13 +149,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 14
+    weight: 13
     region: content
     settings:
       display_label: true
