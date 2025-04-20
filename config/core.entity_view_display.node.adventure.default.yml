@@ -5,11 +5,15 @@ dependencies:
   config:
     - field.field.node.adventure.body
     - field.field.node.adventure.field_adventure_date
+    - field.field.node.adventure.field_adventure_hero
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_region
+    - field.field.node.adventure.field_adventure_stages
     - node.type.adventure
   module:
     - datetime
+    - entity_reference_revisions
+    - image
     - text
     - user
 id: node.adventure.default
@@ -33,6 +37,17 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_adventure_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_adventure_location:
     type: entity_reference_label
     label: above
@@ -40,6 +55,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_adventure_stages:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_region:
     type: entity_reference_label

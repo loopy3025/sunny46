@@ -1,0 +1,34 @@
+uuid: 7dd1e1d4-e7ae-494d-a369-7cf9956e52ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_stages
+    - node.type.adventure
+    - paragraphs.paragraphs_type.adventure_stage
+  module:
+    - entity_reference_revisions
+id: node.adventure.field_adventure_stages
+field_name: field_adventure_stages
+entity_type: node
+bundle: adventure
+label: Stages
+description: "Add stages to your adventure here. It's okay for an adventure to have just one stage, especially shorter adventures."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      adventure_stage: adventure_stage
+    negate: 0
+    target_bundles_drag_drop:
+      adventure_stage:
+        weight: 3
+        enabled: true
+      adventure_step:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
