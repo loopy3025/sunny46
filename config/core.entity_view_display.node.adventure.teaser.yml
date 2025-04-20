@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.adventure.field_adventure_type
     - node.type.adventure
   module:
+    - image
     - text
     - user
 id: node.adventure.teaser
@@ -28,20 +29,26 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
-  links:
-    settings: {  }
+  field_adventure_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_adventure_date: true
   field_adventure_end_date: true
-  field_adventure_hero: true
   field_adventure_location: true
   field_adventure_region: true
   field_adventure_stages: true
   field_adventure_tags: true
   field_adventure_type: true
   field_region: true
+  links: true
