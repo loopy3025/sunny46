@@ -38,6 +38,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_region_map: true
   field_region_northeast_latitude: true
   field_region_northeast_longitude: true
   field_region_southwest_latitude: true
