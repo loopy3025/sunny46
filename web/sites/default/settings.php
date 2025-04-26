@@ -33,9 +33,9 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 $databases['default']['default'] = array (
-  'database' => 'default',
-  'username' => 'user',
-  'password' => 'user',
+  'database' => 'sunnyco2_drupal',
+  'username' => 'sunnyco2_application',
+  'password' => 'djqknqkj223722jfn2kf!!sdvswjvnkwefiwe323CWE',
   'prefix' => '',
   'host' => 'db',
   'port' => '3306',
