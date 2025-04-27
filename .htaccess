@@ -1,0 +1,38 @@
+# Enable rewriting
+RewriteEngine On
+
+# Redirect everything to /web folder
+RewriteCond %{REQUEST_URI} !^/web/
+RewriteRule ^(.*)$ /web/$1 [L]
+
+# Security: Protect sensitive files
+<FilesMatch "\.(htaccess|git|env|json|lock|yml|yaml|md|twig|tpl|php\.save|php\.swp|php\.bak|php\.orig)$">
+  Require all denied
+</FilesMatch>
+
+# Security: Disable directory browsing
+Options -Indexes
+
+# Security: Prevent script execution in uploads
+<Directory "/web/sites/default/files">
+  <FilesMatch "\.(php|pl|py|jsp|asp|sh|cgi)$">
+    Require all denied
+  </FilesMatch>
+</Directory>
+
+# Performance: Enable basic caching (for static files)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+</IfModule>
+
+# Compression: Enable gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
