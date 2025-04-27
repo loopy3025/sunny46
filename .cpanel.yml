@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sunnyco2/public_html
+    - /bin/cp -rf * $DEPLOYPATH
+    - cd $DEPLOYPATH
+    - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
