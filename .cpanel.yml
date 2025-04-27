@@ -6,4 +6,4 @@ deployment:
     - /bin/rsync -a --exclude='.git' ./ $DEPLOYPATH
     - cd $DEPLOYPATH
     - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
-    - php vendor/bin/drush cr
+    - vendor/bin/drush cr
