@@ -4,6 +4,7 @@ deployment:
     - /bin/chmod -R 755 $DEPLOYPATH/web/sites/default
     - /bin/rm -rf $DEPLOYPATH/*
     - /bin/rsync -a --exclude='.git' ./ $DEPLOYPATH
+    - /bin/chmod -R 755 $DEPLOYPATH
     - cd $DEPLOYPATH
     - /opt/cpanel/composer/bin/composer audit
     - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
