@@ -14,7 +14,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *      a local development environment, to ensure that
  *      the site settings remain consistent.
  */
-include __DIR__ . "/settings.pantheon.php";
+include __DIR__ . "/settings.sunny46.php";
 
 /**
  * Skipping permissions hardening will make scaffolding
@@ -25,23 +25,3 @@ include __DIR__ . "/settings.pantheon.php";
  */
 // $settings['skip_permissions_hardening'] = TRUE;
 
-/**
- * If there is a local settings file, then include it
- */
-$local_settings = __DIR__ . "/settings.local.php";
-if (file_exists($local_settings)) {
-  include $local_settings;
-}
-$databases['default']['default'] = array (
-  'database' => 'sunnyco2_drupal',
-  'username' => 'sunnyco2_application',
-  'password' => 'djqknqkj223722jfn2kf!!sdvswjvnkwefiwe323CWE',
-  'prefix' => '',
-  'host' => 'db',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'driver' => 'mysql',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
-$settings['hash_salt'] = '1ovTQGcxYY-bh9sSDVGQRSIuEGqUZSsdx9bbfg0ir_hsRCedIsnRTErG93_INFRFxOPvc7WTUw';
