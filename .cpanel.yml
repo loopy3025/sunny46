@@ -1,7 +1,9 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sunnyco2/public_html
-    - /bin/cp -rf * $DEPLOYPATH
+    - /bin/chmod -R 755 $DEPLOYPATH/web/sites/default
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/rsync -a --exclude='.git' ./ $DEPLOYPATH
     - cd $DEPLOYPATH
     - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader
+    - php vendor/bin/drush cr
