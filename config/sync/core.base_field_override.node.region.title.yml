@@ -8,7 +8,7 @@ id: node.region.title
 field_name: title
 entity_type: node
 bundle: region
-label: 'Location Name'
+label: 'Region Name'
 description: ''
 required: true
 translatable: true
