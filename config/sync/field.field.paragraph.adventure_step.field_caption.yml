@@ -1,0 +1,24 @@
+uuid: eb58389b-3112-497a-a98b-24c2ad15e84d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.adventure_step
+  module:
+    - text
+id: paragraph.adventure_step.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: adventure_step
+label: Caption
+description: 'This is a short description for a step of your travel which is formatted differently from the Narrative field. Usually, a step will have one or the other.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

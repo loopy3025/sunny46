@@ -14,7 +14,7 @@ entity_type: paragraph
 bundle: adventure_step
 label: Narrative
 description: 'The text associated with a step should be added here.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

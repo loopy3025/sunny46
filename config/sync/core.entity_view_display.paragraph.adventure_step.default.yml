@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.adventure_step.field_adventure_step_images
     - field.field.paragraph.adventure_step.field_adventure_step_narrative
-    - field.field.paragraph.adventure_step.field_adventure_step_title
+    - field.field.paragraph.adventure_step.field_caption
     - paragraphs.paragraphs_type.adventure_step
   module:
     - image
@@ -24,7 +24,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_adventure_step_narrative:
     type: text_default
@@ -33,12 +33,11 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_adventure_step_title:
-    type: string
+  field_caption:
+    type: text_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }

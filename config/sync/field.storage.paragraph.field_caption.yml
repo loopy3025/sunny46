@@ -1,18 +1,17 @@
-uuid: b7545294-d94a-46a1-8cf6-27c815f8194e
+uuid: 99be0b9a-17f8-4acb-a73d-484f2a02ea49
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_adventure_step_title
-field_name: field_adventure_step_title
+    - text
+id: paragraph.field_caption
+field_name: field_caption
 entity_type: paragraph
-type: string
+type: text
 settings:
   max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

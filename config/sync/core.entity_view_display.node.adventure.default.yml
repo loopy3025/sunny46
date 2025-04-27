@@ -32,25 +32,25 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
   field_adventure_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_adventure_end_date:
     type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_adventure_hero:
     type: image
@@ -63,14 +63,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_adventure_location:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 5
-    region: content
   field_adventure_map:
     type: image
     label: above
@@ -80,15 +72,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_adventure_region:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_adventure_route_file:
     type: file_default
@@ -96,7 +80,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 104
+    weight: 7
     region: content
   field_adventure_stages:
     type: entity_reference_revisions_entity_view
@@ -105,7 +89,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 4
     region: content
   field_adventure_tags:
     type: entity_reference_label
@@ -113,15 +97,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
-    region: content
-  field_adventure_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
+    weight: 6
     region: content
   field_region:
     type: entity_reference_label
@@ -132,4 +108,7 @@ content:
     weight: 102
     region: content
 hidden:
+  field_adventure_location: true
+  field_adventure_region: true
+  field_adventure_type: true
   links: true

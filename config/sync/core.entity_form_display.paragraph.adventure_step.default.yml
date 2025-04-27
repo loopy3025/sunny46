@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.adventure_step.field_adventure_step_images
     - field.field.paragraph.adventure_step.field_adventure_step_narrative
-    - field.field.paragraph.adventure_step.field_adventure_step_title
+    - field.field.paragraph.adventure_step.field_caption
     - image.style.thumbnail
     - paragraphs.paragraphs_type.adventure_step
   module:
@@ -18,7 +18,7 @@ mode: default
 content:
   field_adventure_step_images:
     type: image_image
-    weight: 1
+    weight: 0
     region: content
     settings:
       progress_indicator: throbber
@@ -32,9 +32,9 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_adventure_step_title:
-    type: string_textfield
-    weight: 0
+  field_caption:
+    type: text_textfield
+    weight: 1
     region: content
     settings:
       size: 60
