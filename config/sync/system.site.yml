@@ -2,9 +2,9 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 525d00c5-32e7-4c39-98ea-ff41140bb379
-name: 'Drush Site-Install'
-mail: admin@example.com
-slogan: ''
+name: 'Sunny 46'
+mail: adam.fasoldt@gmail.com
+slogan: "Sunny Days is a Golden Retriever who's hiking the Adirondack High Peaks and more!"
 page:
   403: ''
   404: ''
