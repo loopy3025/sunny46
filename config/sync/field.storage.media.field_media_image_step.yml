@@ -1,14 +1,14 @@
-uuid: 5b5443e5-b62b-40ae-a3f5-2d434b9399cb
+uuid: 75690a23-d09e-4eb4-a4fb-842f13e905f0
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-id: node.field_region_map
-field_name: field_region_map
-entity_type: node
+    - media
+id: media.field_media_image_step
+field_name: field_media_image_step
+entity_type: media
 type: image
 settings:
   target_type: file
@@ -16,7 +16,7 @@ settings:
   display_default: true
   uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

@@ -1,16 +1,16 @@
-uuid: 45b8a59f-b3e0-47a1-8ded-35b26b8a2c5c
+uuid: dd855f77-93ee-464d-b2df-50c7a9569a4d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_adventure_map
-    - media.type.map
+    - field.storage.node.field_adventure_hero_image
+    - media.type.hero_image
     - node.type.adventure
-id: node.adventure.field_adventure_map
-field_name: field_adventure_map
+id: node.adventure.field_adventure_hero_image
+field_name: field_adventure_hero_image
 entity_type: node
 bundle: adventure
-label: 'Adventure Map'
+label: 'Adventure Hero'
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      map: map
+      hero_image: hero_image
     sort:
-      field: created
+      field: uid
       direction: DESC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: hero_image
 field_type: entity_reference

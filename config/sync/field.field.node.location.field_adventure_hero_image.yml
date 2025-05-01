@@ -1,0 +1,29 @@
+uuid: 3e7b6d2b-2921-4cc4-8520-acedfbff2e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_hero_image
+    - media.type.hero_image
+    - node.type.location
+id: node.location.field_adventure_hero_image
+field_name: field_adventure_hero_image
+entity_type: node
+bundle: location
+label: 'Location Hero'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      hero_image: hero_image
+    sort:
+      field: uid
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: hero_image
+field_type: entity_reference

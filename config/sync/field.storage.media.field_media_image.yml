@@ -1,14 +1,14 @@
-uuid: 6e55fa4c-1968-4e6b-9d0d-434d5b58a46d
+uuid: 053c51b6-aae9-426b-8a47-bc6a31dff2f9
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - paragraphs
-id: paragraph.field_adventure_step_images
-field_name: field_adventure_step_images
-entity_type: paragraph
+    - media
+id: media.field_media_image
+field_name: field_media_image
+entity_type: media
 type: image
 settings:
   target_type: file
@@ -23,7 +23,7 @@ settings:
     height: null
 module: image
 locked: false
-cardinality: 4
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

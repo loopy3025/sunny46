@@ -1,0 +1,31 @@
+uuid: 924fec73-905a-45e0-a250-22bd8857a4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.map.field_media_image
+    - image.style.wide
+    - media.type.map
+  module:
+    - image
+id: media.map.default
+targetEntityType: media
+bundle: map
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: file
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

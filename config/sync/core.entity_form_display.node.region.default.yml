@@ -4,17 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.region.body
-    - field.field.node.region.field_adventure_hero
-    - field.field.node.region.field_region_map
+    - field.field.node.region.field_adventure_hero_image
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
     - field.field.node.region.field_region_southwest_latitude
     - field.field.node.region.field_region_southwest_longitude
-    - image.style.thumbnail
     - node.type.region
   module:
     - field_group
-    - image
+    - media_library
     - path
     - text
 third_party_settings:
@@ -66,21 +64,12 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_adventure_hero:
-    type: image_image
-    weight: 1
+  field_adventure_hero_image:
+    type: media_library_widget
+    weight: 0
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_region_map:
-    type: image_image
-    weight: 10
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_region_northeast_latitude:
     type: number

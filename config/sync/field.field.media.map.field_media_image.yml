@@ -1,20 +1,20 @@
-uuid: 763e410a-3166-410d-9c16-8a54413f7026
+uuid: 631ec379-59e4-4151-80fe-0eea63f8cbf0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_adventure_hero
-    - node.type.adventure
+    - field.storage.media.field_media_image
+    - media.type.map
   module:
     - image
-id: node.adventure.field_adventure_hero
-field_name: field_adventure_hero
-entity_type: node
-bundle: adventure
-label: Hero
+id: media.map.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: map
+label: 'Map Image'
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

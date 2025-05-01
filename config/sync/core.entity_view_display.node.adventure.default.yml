@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.adventure.body
     - field.field.node.adventure.field_adventure_date
     - field.field.node.adventure.field_adventure_end_date
-    - field.field.node.adventure.field_adventure_hero
+    - field.field.node.adventure.field_adventure_hero_image
     - field.field.node.adventure.field_adventure_location
     - field.field.node.adventure.field_adventure_map
     - field.field.node.adventure.field_adventure_region
@@ -19,7 +19,6 @@ dependencies:
     - datetime
     - entity_reference_revisions
     - file
-    - image
     - text
     - user
 id: node.adventure.default
@@ -52,25 +51,21 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_adventure_hero:
-    type: image
+  field_adventure_hero_image:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
   field_adventure_map:
-    type: image
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 5
     region: content

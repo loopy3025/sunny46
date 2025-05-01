@@ -1,0 +1,14 @@
+uuid: d8ec114c-5b98-47f1-b8d0-af6a134a1116
+langcode: en
+status: true
+dependencies: {  }
+id: map
+label: Map
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

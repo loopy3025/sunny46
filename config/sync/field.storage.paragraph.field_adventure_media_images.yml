@@ -1,19 +1,19 @@
-uuid: b6f2aa14-316d-48a3-b544-84c4009221f4
+uuid: 2e8903e3-b279-4c72-8137-02e00ccc5a18
 langcode: en
 status: true
 dependencies:
   module:
     - media
-    - node
-id: node.field_adventure_map
-field_name: field_adventure_map
-entity_type: node
+    - paragraphs
+id: paragraph.field_adventure_media_images
+field_name: field_adventure_media_images
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: media
 module: core
 locked: false
-cardinality: 1
+cardinality: 4
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

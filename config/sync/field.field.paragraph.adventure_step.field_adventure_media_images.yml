@@ -1,0 +1,29 @@
+uuid: 2bb37593-a5b9-42a6-992f-8a18528cf5b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_adventure_media_images
+    - media.type.step_image
+    - paragraphs.paragraphs_type.adventure_step
+id: paragraph.adventure_step.field_adventure_media_images
+field_name: field_adventure_media_images
+entity_type: paragraph
+bundle: adventure_step
+label: 'Adventure Media Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      step_image: step_image
+    sort:
+      field: created
+      direction: DESC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

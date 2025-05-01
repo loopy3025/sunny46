@@ -1,12 +1,12 @@
-uuid: b6f2aa14-316d-48a3-b544-84c4009221f4
+uuid: 21936fe4-b743-4b98-98b1-4f6070ee1334
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
-id: node.field_adventure_map
-field_name: field_adventure_map
+id: node.field_adventure_hero_image
+field_name: field_adventure_hero_image
 entity_type: node
 type: entity_reference
 settings:

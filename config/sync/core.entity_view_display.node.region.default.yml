@@ -4,15 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.region.body
-    - field.field.node.region.field_adventure_hero
-    - field.field.node.region.field_region_map
+    - field.field.node.region.field_adventure_hero_image
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
     - field.field.node.region.field_region_southwest_latitude
     - field.field.node.region.field_region_southwest_longitude
     - node.type.region
   module:
-    - image
     - text
     - user
 id: node.region.default
@@ -25,16 +23,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
-  field_adventure_hero:
-    type: image
+  field_adventure_hero_image:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
@@ -50,7 +46,6 @@ content:
     weight: 0
     region: content
 hidden:
-  field_region_map: true
   field_region_northeast_latitude: true
   field_region_northeast_longitude: true
   field_region_southwest_latitude: true

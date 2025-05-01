@@ -1,20 +1,20 @@
-uuid: faae0794-3a00-4530-852f-87d2d05a5972
+uuid: bc10de7f-36ba-4753-946f-aee70106939e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_adventure_hero
-    - node.type.location
+    - field.storage.media.field_media_image
+    - media.type.hero_image
   module:
     - image
-id: node.location.field_adventure_hero
-field_name: field_adventure_hero
-entity_type: node
-bundle: location
-label: Hero
+id: media.hero_image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: hero_image
+label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -30,7 +30,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

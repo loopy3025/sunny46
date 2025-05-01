@@ -3,27 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.adventure_step.field_adventure_step_images
+    - field.field.paragraph.adventure_step.field_adventure_media_images
     - field.field.paragraph.adventure_step.field_adventure_step_narrative
     - field.field.paragraph.adventure_step.field_caption
-    - image.style.wide
     - paragraphs.paragraphs_type.adventure_step
   module:
-    - image
     - text
 id: paragraph.adventure_step.default
 targetEntityType: paragraph
 bundle: adventure_step
 mode: default
 content:
-  field_adventure_step_images:
-    type: image
+  field_adventure_media_images:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: file
-      image_style: wide
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
@@ -32,13 +28,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_caption:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden: {  }
