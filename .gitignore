@@ -34,3 +34,6 @@
 
 # Local system
 **/.DS_Store
+
+# Temp
+/tmp

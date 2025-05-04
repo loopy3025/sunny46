@@ -1,0 +1,11 @@
+prod:
+  root: web
+  uri: http://sunnyco2.wwwmi3-cl9-its5.a2hosted.com
+  remote-host: sunnyco2.wwwmi3-cl9-its5.a2hosted.com
+  remote-user: sunnyco2
+
+local:
+  root: /var/www/web
+  uri: http://sunny46.docksal.site
+  options:
+    target-dump: /var/www/tmp/tmp.sql.gz
