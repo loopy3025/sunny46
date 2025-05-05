@@ -722,7 +722,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_target_id
-          default_action: ignore
+          default_action: 'not found'
           exception:
             value: all
             title_enable: false
