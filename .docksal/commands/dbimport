@@ -9,6 +9,6 @@
 
 ## Import Locally
 rm db/latest.sql
-scp -P 7822 sunnyco2@sunnyco2.mi3-cl9-its5.a2hosting.com:/home/sunnyco2/public_html/db/tmp.sql.gz db/latest.sql
+scp -P 7822 sunnyco2@sunnyco2.mi3-cl9-its5.a2hosting.com:/home/sunnyco2/public_html/db/tmp.sql db/latest.sql
 sed -i '1d' db/latest.sql
 fin db import db/latest.sql
