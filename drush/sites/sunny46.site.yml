@@ -1,8 +1,12 @@
 prod:
-  root: web
-  uri: http://sunnyco2.wwwmi3-cl9-its5.a2hosted.com
-  remote-host: sunnyco2.wwwmi3-cl9-its5.a2hosted.com
+  root: /home/sunnyco2/public_html/web
+  uri: 'http://sunnyco2.wwwmi3-cl9-its5.a2hosting.com'
+  remote-host: sunnyco2.mi3-cl9-its5.a2hosting.com
   remote-user: sunnyco2
+  ssh-options: '-p 7822'
+  paths:
+    drush-script: drush
+
 
 local:
   root: /var/www/web
