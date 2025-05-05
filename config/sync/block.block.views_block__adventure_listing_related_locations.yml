@@ -1,4 +1,4 @@
-uuid: 5a39feac-9d63-4c34-851b-fce352b07e12
+uuid: 911c2bbb-9cc5-47f1-b3c2-87e821f9761e
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - olivero
-id: views_block__adventure_listing_adventure_listing_related
+id: views_block__adventure_listing_adventure_listing_related_locations
 theme: olivero
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:adventure_listing-adventure_listing_related'
+plugin: 'views_block:adventure_listing-adventure_listing_related_locations'
 settings:
-  id: 'views_block:adventure_listing-adventure_listing_related'
+  id: 'views_block:adventure_listing-adventure_listing_related_locations'
   label: ''
   label_display: visible
   provider: views
@@ -30,4 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      region: region
+      location: location
