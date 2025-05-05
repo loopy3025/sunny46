@@ -774,7 +774,7 @@ display:
       tags:
         - 'config:field.storage.node.field_adventure_date'
   adventure_listing_related_locations:
-    id: block_1
+    id: adventure_listing_related_locations
     display_title: 'Related Adventures - Locations'
     display_plugin: block
     position: 2

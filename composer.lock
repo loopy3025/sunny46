@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd61bea7ad3bdaff0bdbbc6d36327813",
+    "content-hash": "11795b666627eba05933505471f15919",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1906,6 +1906,63 @@
             "time": "2025-04-02T21:06:44+00:00"
         },
         {
+            "name": "drupal/crop",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/crop.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "be11fad0abf1d53544d35cb4ca6cedd8e91d2542"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1720455738",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "woprrr",
+                    "homepage": "https://www.drupal.org/user/858604"
+                }
+            ],
+            "description": "Provides storage and API for image crops.",
+            "homepage": "https://www.drupal.org/project/crop",
+            "support": {
+                "source": "https://git.drupalcode.org/project/crop",
+                "issues": "https://www.drupal.org/project/issues/crop"
+            }
+        },
+        {
             "name": "drupal/ctools",
             "version": "4.1.0",
             "source": {
@@ -2285,6 +2342,61 @@
             }
         },
         {
+            "name": "drupal/focal_point",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/focal_point.git",
+                "reference": "2.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/focal_point-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "5f8ffadd37748506c8f00314b1d45c947eb27cf7"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11",
+                "drupal/crop": "^2.3"
+            },
+            "require-dev": {
+                "drupal/crop": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.2",
+                    "datestamp": "1731556344",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Ross (bleen)",
+                    "homepage": "https://www.drupal.org/u/bleen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "rajeshreeputra",
+                    "homepage": "https://www.drupal.org/user/3418561"
+                }
+            ],
+            "description": "Focal Point allows content creators to mark the most important part of an image for easier cropping.",
+            "homepage": "https://drupal.org/project/focal_point",
+            "support": {
+                "source": "https://cgit.drupalcode.org/focal_point",
+                "issues": "https://drupal.org/project/issues/focal_point",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/imagemagick",
             "version": "4.0.2",
             "source": {
@@ -2570,6 +2682,87 @@
             "homepage": "https://www.drupal.org/project/sophron",
             "support": {
                 "source": "https://git.drupalcode.org/project/sophron"
+            }
+        },
+        {
+            "name": "drupal/term_reference_tree",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/term_reference_tree.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/term_reference_tree-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "d6aa261a9449dadddcbb6320fdcc019941d8413a"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10 || ^11 || ^12"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1736084776",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1088348/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "BartK",
+                    "homepage": "https://www.drupal.org/user/401025"
+                },
+                {
+                    "name": "carpenter.490",
+                    "homepage": "https://www.drupal.org/user/804142"
+                },
+                {
+                    "name": "dave reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "dgtlmoon",
+                    "homepage": "https://www.drupal.org/user/25027"
+                },
+                {
+                    "name": "MoustafaEid",
+                    "homepage": "https://www.drupal.org/user/1126928"
+                },
+                {
+                    "name": "sdrycroft",
+                    "homepage": "https://www.drupal.org/user/151544"
+                },
+                {
+                    "name": "sumitmadan",
+                    "homepage": "https://www.drupal.org/user/1538790"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "An expanding/collapsing tree widget for selecting terms in a taxonomy term reference field.",
+            "homepage": "https://drupal.org/project/term_reference_tree",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/term_reference_tree",
+                "issues": "https://drupal.org/project/issues/term_reference_tree"
             }
         },
         {
