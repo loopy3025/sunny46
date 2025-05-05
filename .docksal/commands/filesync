@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rsync -avz -e "ssh -p 7822" sunnyco2@sunnyco2.mi3-cl9-its5.a2hosting.com:/home/sunnyco2/public_html/web/sites/default/files/ ./web/sites/default/files/
