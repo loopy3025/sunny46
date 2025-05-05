@@ -1,0 +1,28 @@
+uuid: 78075b43-f6ed-4f5a-a63b-6e2bbb82cd97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adventure_region
+    - node.type.region
+id: node.region.field_adventure_region
+field_name: field_adventure_region
+entity_type: node
+bundle: region
+label: Sub-Regions
+description: 'You may wish to designate sub-regions within a greater region. You can nest these as deep as you like. On the region page, all sub-regions will be displayed with Adventures in date order. Alternatively, you can simply display all adventures by year without sub-region categorization.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

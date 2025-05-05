@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.region.body
     - field.field.node.region.field_adventure_hero_image
+    - field.field.node.region.field_adventure_region
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
     - field.field.node.region.field_region_southwest_latitude
@@ -33,6 +34,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_adventure_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_map:
     type: image

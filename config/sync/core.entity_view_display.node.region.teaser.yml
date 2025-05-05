@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.region.body
     - field.field.node.region.field_adventure_hero_image
+    - field.field.node.region.field_adventure_region
     - field.field.node.region.field_region_northeast_latitude
     - field.field.node.region.field_region_northeast_longitude
     - field.field.node.region.field_region_southwest_latitude
@@ -37,6 +38,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_adventure_region: true
   field_region_northeast_latitude: true
   field_region_northeast_longitude: true
   field_region_southwest_latitude: true
