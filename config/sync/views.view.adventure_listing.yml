@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_adventure_date
     - node.type.adventure
-    - system.menu.main
   module:
     - datetime
     - node
@@ -387,14 +386,14 @@ display:
       display_extenders: {  }
       path: adventure-blog
       menu:
-        type: normal
+        type: none
         title: Blog
-        description: null
+        description: ''
         weight: 0
-        enabled: true
         expanded: false
         menu_name: main
         parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
