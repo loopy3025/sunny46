@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
+    - field.field.node.location.field_trailhead
     - node.type.location
   module:
     - text
@@ -39,4 +40,5 @@ hidden:
   field_location_latitude: true
   field_location_longitude: true
   field_location_region: true
+  field_trailhead: true
   links: true

@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
+    - field.field.node.location.field_trailhead
     - node.type.location
   module:
+    - link
     - text
     - user
 id: node.location.default
@@ -22,7 +24,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_adventure_hero_image:
     type: entity_reference_entity_view
@@ -42,7 +44,7 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_location_longitude:
     type: number_decimal
@@ -53,7 +55,7 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
   field_location_region:
     type: entity_reference_label
@@ -62,6 +64,18 @@ content:
       link: true
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_trailhead:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   links: true

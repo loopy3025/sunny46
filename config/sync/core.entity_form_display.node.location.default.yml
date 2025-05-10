@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.location.field_location_latitude
     - field.field.node.location.field_location_longitude
     - field.field.node.location.field_location_region
+    - field.field.node.location.field_trailhead
     - node.type.location
   module:
+    - link
     - media_library
     - path
     - text
@@ -51,7 +53,7 @@ content:
     third_party_settings: {  }
   field_location_region:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -59,15 +61,23 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_trailhead:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
