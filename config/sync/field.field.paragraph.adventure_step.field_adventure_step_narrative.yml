@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_adventure_step_narrative
     - filter.format.basic_html
+    - filter.format.full_html
     - paragraphs.paragraphs_type.adventure_step
   module:
     - text
@@ -21,4 +22,5 @@ default_value_callback: ''
 settings:
   allowed_formats:
     - basic_html
+    - full_html
 field_type: text_long
